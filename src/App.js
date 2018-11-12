@@ -1,17 +1,6 @@
 import React from 'react';
 
-/*
- * CardGroup
- * This component takes Card components as children and renders them.
- * Example usage:
- *
- *      <CardGroup>
- *          <Card description="Trial" icon="fa-thumbs-o-up" price="Free!" />
- *      </CardGroup>
- *
- * The above would render a card group with a single child in it.
- *
- */
+
 const CardGroup = (props) => (
     <div className="cardGroup">
         {props.children}
@@ -29,6 +18,7 @@ const Card = (props) => (
         <div className="card__price">{props.price}</div>
     </div>
 );
+//uninstall beautify and intall prettier as an extension...
 
 const CardDescription = props => (
     <div>{props.description}
@@ -40,7 +30,7 @@ const CardDescription = props => (
 
 const App = () => (
     <CardGroup>
-        <Card icon="fa-thumbs-o-up" price="Free!">
+        <Card icon="fa-thumbs-o-up" price="Free!" hint="">
             <CardDescription description="Trial"/>
         </Card>
         <Card icon="fa-trophy" price="$10.00">
